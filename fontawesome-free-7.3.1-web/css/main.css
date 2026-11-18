@@ -1,0 +1,50 @@
+/*variables */
+:root {
+
+    --main-coLor: #333;
+    --secondary-color: #26D381;
+    --section-bacKground: #212A34;
+
+    /*start global style */
+    html {
+        scroll-behavior: smooth;
+    }
+
+        {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: "work sans", sans-serif;
+    }
+
+    .containar {
+        padding-left: 20px;
+        padding-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+
+
+    }
+}
+
+/*end global style*/
+/*start header*/
+# logo {
+    width: 70px;
+}
+
+header {
+    padding: 20px;
+}
+
+header.containar {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header
+/* end header*/

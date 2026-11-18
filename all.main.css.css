@@ -1,0 +1,178 @@
+/*variables */
+:root {
+
+    --main-color: #26D381;
+    --secondary-color: #333;
+    --section-bacKground: #212A34;
+}
+
+/*start global style */
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "work sans", sans-serif;
+    margin: 0;
+}
+
+.continar {
+    padding-left: 20px;
+    padding-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+
+/* end globle style*/
+@media(min-width:760px) {
+    .continar {
+        width: 750px;
+    }
+}
+
+/* media query*/
+@media(min-width:990px) {
+    .continar {
+        width: 970px;
+    }
+}
+
+/*large*/
+@media(min-width:1200px) {
+    .continar {
+        width: 1150px;
+    }
+}
+
+/* start header*/
+#logo {
+
+    width: 70px;
+}
+
+header {
+    padding: 15px;
+}
+
+header .continar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0;
+}
+
+header .links {
+    position: relative;
+}
+
+header .links ul {
+    list-style: none;
+    position: absolute;
+    right: 0;
+    background-color: #ddd;
+    min-width: 200px;
+    padding: 0;
+    display: none;
+    margin: 0;
+    z-index: 1;
+}
+
+header .links:hover ul {
+    display: block;
+}
+
+header ul a {
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+header ul a:hover {
+    padding-left: 20px;
+
+}
+
+header .links i {
+    font-size: 25px;
+}
+
+header .links ul li:not(:last-child) a {
+    border-bottom: 1px solid #ddd;
+}
+
+
+/* end header*/
+/* start landing*/
+#landing {
+    background-image: url(../landing.jpg);
+    background-size: cover;
+    height: calc(100vh);
+    position: relative;
+}
+
+#landing h1 {
+    margin: 0;
+}
+
+#landing .intro {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 300px;
+}
+
+#landing h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #26D381;
+}
+
+#landing p {
+    font-size: 20px line: height 2px;
+}
+
+/*grid- template-columns:repeat(3,1fr); ثلاثة اعمدة متساوية  */
+
+/* start features */
+
+#features {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+#features .continar {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    width: 90%;
+    margin: auto;
+}
+
+#features .feat {
+    text-align: center;
+    padding: 20px;
+}
+
+#features .feat i {
+    font-size: 40px;
+    color: #26D381;
+}
+
+#features .feat h3 {
+    font-weight: 800;
+}
+
+#features .feat p {
+    color: var(--secondary-color);
+}
+
+/* end features */
