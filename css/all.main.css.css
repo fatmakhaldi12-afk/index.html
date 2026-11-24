@@ -25,10 +25,25 @@ body {
     padding-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.specil-heading {
+    color: #ddd;
+    font-size: 100px;
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: -3px;
+    margin: 0;
+}
+
+.specil-heading+p {
+    text-align: center;
+    margin-top: -30px;
+    font-size: 20px;
+    color: #797979;
 
 
 }
-
 
 /* end globle style*/
 @media(min-width:760px) {
@@ -137,7 +152,8 @@ header .links ul li:not(:last-child) a {
 }
 
 #landing p {
-    font-size: 20px line: height 2px;
+    font-size: 20px;
+    line-height: 2;
 }
 
 /*grid- template-columns:repeat(3,1fr); ثلاثة اعمدة متساوية  */
@@ -176,3 +192,117 @@ header .links ul li:not(:last-child) a {
 }
 
 /* end features */
+/* start services*/
+#services {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+#services .innar-continar {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 30px;
+    margin-top: 100px;
+
+}
+
+#services .innar-continar .serv {
+    display: flex;
+    margin-bottom: 50px;
+
+}
+
+#services .innar-continar i {
+    color: #26D381;
+    flex-basis: 60px;
+}
+
+#services .innar-continar .text {
+    flex: 1;
+
+}
+
+#services .innar-continar h3 {
+    margin: 0 0 25px;
+}
+
+#services .innar-continar p {
+    color: #444;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+#services .innar-continar .image {
+    text-align: center;
+    position: relative;
+
+}
+
+#services .innar-continar .image img {
+    width: 250px;
+    position: relative;
+    z-index: 1;
+
+}
+
+#services .innar-continar .image::before {
+    content: "";
+    background-color: #212A34;
+    width: 80px;
+    height: calc(100% + 100px);
+    position: absolute;
+    right: 0;
+    top: -50px;
+    z-index: 1;
+
+}
+
+@media(max-width:760px) {
+
+    #services .innar-continar .serv {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+/*end  services*/
+/*start portfolio*/
+#portfolio {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: aliceblue;
+
+}
+
+#portfolio .innar-continar {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 30px;
+    margin-top: 100px;
+}
+
+#portfolio .innar-continar img {
+    width: 100%;
+
+}
+
+#portfolio .innar-continar .full-project {
+    background-color: white;
+}
+
+#portfolio .innar-continar .info {
+    padding: 20px;
+
+}
+
+#portfolio .innar-continar .info h4 {
+    margin: 0;
+}
+
+#portfolio .innar-continar p {
+    color: #444;
+    line-height: 1.5;
+}
+
+/*end portfolio*/
